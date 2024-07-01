@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top nav-mpt">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Halaman Pemantauan Cuaca</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Manajemen Pertanian Terintegrasi</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Back to Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Pemantauan Cuaca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kalender Tanam</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Perencanaan Tanam</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Data Hasil Panen</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="weather">
+        <div class="container-w">
+            <div class="widget">
+                <div class="left">
+                    <img src="assets/weather/cloudy-night-2.svg" alt="cloudy" class="icon">
+                    <h5 class="weather-status"> Party Cloud</h5>
+                </div>
+                <div class="right">
+                    <h5 class="area">Desa Petani</h5>
+                    <h5 class="degree">18&#176C</h5>
+                </div>
+                <div class="bottom-w">
+                    <div>
+                        Wind Speed <span>27 kmph</span>
+                    </div>
+                    <div>
+                        Cloud Cover <span>70%</span>
+                    </div>
+                    <div>
+                        Pressure <span>1013 mb</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="future-forecast">
+            <div class="today" id="current-temp">
+                <img src="assets/weather/rainy-5.svg" alt="weather icon" class="w-icon">
+                <div class="other">
+                    <div class="day">Monday</div>
+                    <div class="temp">Night - 20.5&#176; C</div>
+                    <div class="temp">Day - 25.3&#176; C</div>
+                </div>
+            </div>
+            <div class="weather-forecast" id="weather-forecast">
+                <div class="weather-forecast-item">
+                    <div class="day">Tue</div>
+                    <img src="assets/weather/day.svg" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 24.1&#176; C</div>
+                    <div class="temp">Day - 36.7&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Wed</div>
+                    <img src="assets/weather/cloudy-day-2.svg" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.5&#176; C</div>
+                    <div class="temp">Day - 35.1&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Thur</div>
+                    <img src="assets/weather/thunder.svg" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 18.3&#176; C</div>
+                    <div class="temp">Day - 23.1&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Fri</div>
+                    <img src="assets/weather/rainy-5.svg" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 20.1&#176; C</div>
+                    <div class="temp">Day - 24.6&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Sat</div>
+                    <img src="assets/weather/day.svg" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 28.5&#176; C</div>
+                    <div class="temp">Day - 35.8&#176; C</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
